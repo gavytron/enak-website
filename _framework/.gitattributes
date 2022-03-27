@@ -1,4 +1,0 @@
-# Auto detect text files and perform LF normalization
-# * text=auto
-# https://stackoverflow.com/questions/61562422/wasm-dotnet-integrity-attribute-invalid-for-my-blazor-app-on-github-pages
-* binary
