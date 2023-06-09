@@ -1,5 +1,71 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+/*@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');*/
 
+
+.active-menu-item {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'Alroy';
+    src: url('/fonts/DeArloy.otf') format('opentype');
+}
+
+.menu-card-title {
+    font-family: 'Alroy', sans-serif;
+    color: rgb(20, 117, 122);
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.menu-category {
+/*    margin-top: 20px;*/
+    font-family: 'Alroy', sans-serif;
+    color: rgb(20, 117, 122);
+    font-size: 40px;
+}
+
+/*menu menuitem frames*/
+
+.description-frame::before {
+    content: "";
+    position: absolute;
+    top: -15px;  /* Adjust as needed */
+    left: -20px;  /* Adjust as needed */
+    width: 140px;  /* Adjust as needed */
+    height: 140px;  /* Adjust as needed */
+    background-image: url('/images/frame_corner.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.description-frame::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    width: 140px; /* Adjust as needed */
+    height: 140px; /* Adjust as needed */
+    background-image: url('/images/frame_corner.svg');
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-size: contain;
+}
+
+.description-frame {
+    position: relative;
+}
+
+/*.price {
+    font-weight: bold;
+    color: #a82400;
+    font-size: 1.5rem;
+}*/
+
+/*body {
+    background-color: red;
+}*/
+/*default from Blazor*/
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -12,10 +78,19 @@ a, .btn-link {
     color: #0071c1;
 }
 
-.btn-primary {
+/*.btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
+}*/
+.btn-primary {
+    color: #fff;
+    background-color: #2a5d5c;
+    border-color: #629999;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .content {
@@ -61,4 +136,38 @@ a, .btn-link {
 
     .blazor-error-boundary::after {
         content: "An error has occurred."
+    }
+
+.loading-progress {
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin: 20vh auto 1rem auto;
+}
+
+    .loading-progress circle {
+        fill: none;
+        stroke: #e0e0e0;
+        stroke-width: 0.6rem;
+        transform-origin: 50% 50%;
+        transform: rotate(-90deg);
+    }
+
+        .loading-progress circle:last-child {
+            /*stroke: #1b6ec2;*/
+            stroke: #2a5d5c;
+            stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
+            transition: stroke-dasharray 0.05s ease-in-out;
+        }
+
+.loading-progress-text {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
+}
+
+    .loading-progress-text:after {
+        content: var(--blazor-load-percentage-text, "Loading");
     }
