@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "Enakissimo.Client.dll": "sha256-DAfq8b6J0UFl6+uu1+oT5n48x2ihQGqihCpLtGraq8A=",
+      "Enakissimo.Client.dll": "sha256-hG4rczsm+cXHsNzsE6Dw1Gnok4HTnSQOopFb7W15TXs=",
       "Enakissimo.Shared.dll": "sha256-w4WJm2OXkRIDPQGDXlbIbQcVv3PHenZHcYN7zSB\/qi8=",
       "Microsoft.AspNetCore.Components.dll": "sha256-OWY\/mNAnAxUkwVEO5HZTc8Xe1JwwTVwLMSJ60cJQJJk=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-PSWW+AMMyYy6ceznG4JFR03IfHljgrVem561PnAjGp4=",
@@ -61,7 +61,7 @@
     },
     "satelliteResources": {
       "en-GB": {
-        "en-GB\/Enakissimo.Client.resources.dll": "sha256-AhByLe8F0O6qRZ8u4WanS1+p8V3vFIurWTNhkHHAU6c="
+        "en-GB\/Enakissimo.Client.resources.dll": "sha256-0E6qi8R3HIFX9CReN9naItW55CaLKwZSzTK4DqdqBtU="
       }
     }
   }

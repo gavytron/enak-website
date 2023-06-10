@@ -1,11 +1,20 @@
 /*@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');*/
 
+.navbar {
+    padding: 0.1rem 0.1rem;  
+}
+.navbar-brand {
+    margin-left: -45px; 
+}
 
-.active-menu-item {
+
+/*this is the active menu item in the menu bar*/
+.active-menu-item { 
     font-weight: bold;
     text-decoration: underline;
 }
 
+/* this is to show Alroy fonts in the menu */
 @font-face {
     font-family: 'Alroy';
     src: url('/fonts/DeArloy.otf') format('opentype');
@@ -19,13 +28,12 @@
 }
 
 .menu-category {
-/*    margin-top: 20px;*/
     font-family: 'Alroy', sans-serif;
     color: rgb(20, 117, 122);
     font-size: 40px;
 }
 
-/*menu menuitem frames*/
+/*menu detail: MenuItem Art Nouvau frames   top-left and bottom-right */
 
 .description-frame::before {
     content: "";
@@ -56,15 +64,12 @@
     position: relative;
 }
 
-/*.price {
-    font-weight: bold;
-    color: #a82400;
-    font-size: 1.5rem;
-}*/
 
 /*body {
     background-color: red;
 }*/
+
+
 /*default from Blazor*/
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
